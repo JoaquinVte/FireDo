@@ -13,9 +13,12 @@
 		1C018248267BC5DB00DAC401 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C018246267BC5DB00DAC401 /* Main.storyboard */; };
 		1C01824A267BC5E900DAC401 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C018249267BC5E900DAC401 /* Assets.xcassets */; };
 		1C01824D267BC5E900DAC401 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C01824B267BC5E900DAC401 /* LaunchScreen.storyboard */; };
+		1C8BDA7F267BC73100D8E894 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C8BDA7E267BC73100D8E894 /* GoogleService-Info.plist */; };
+		83674E35BDD40322979AE0BC /* Pods_FireDo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111EF937F5B5546AF0798BCA /* Pods_FireDo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		111EF937F5B5546AF0798BCA /* Pods_FireDo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireDo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C01823D267BC5DA00DAC401 /* FireDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C018240267BC5DB00DAC401 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C018242267BC5DB00DAC401 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		1C018249267BC5E900DAC401 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C01824C267BC5E900DAC401 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C01824E267BC5E900DAC401 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C8BDA7E267BC73100D8E894 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3BDFB10711049B431C86EC5A /* Pods-FireDo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireDo.debug.xcconfig"; path = "Target Support Files/Pods-FireDo/Pods-FireDo.debug.xcconfig"; sourceTree = "<group>"; };
+		772F178DD833CD5620FBDB82 /* Pods-FireDo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireDo.release.xcconfig"; path = "Target Support Files/Pods-FireDo/Pods-FireDo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83674E35BDD40322979AE0BC /* Pods_FireDo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				1C01823F267BC5DA00DAC401 /* FireDo */,
 				1C01823E267BC5DA00DAC401 /* Products */,
+				CABD664FE3B1CA0F9DB9CA20 /* Pods */,
+				FB83749245B9FE41EF01506B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +65,66 @@
 		1C01823F267BC5DA00DAC401 /* FireDo */ = {
 			isa = PBXGroup;
 			children = (
-				1C018240267BC5DB00DAC401 /* AppDelegate.swift */,
+				1C951714267BC8400031D88A /* Controller */,
+				1C951713267BC8380031D88A /* Model */,
+				1C951712267BC82C0031D88A /* View */,
+				1C951710267BC8010031D88A /* Supporting Files */,
+				1C8BDA7E267BC73100D8E894 /* GoogleService-Info.plist */,
 				1C018242267BC5DB00DAC401 /* SceneDelegate.swift */,
 				1C018244267BC5DB00DAC401 /* ViewController.swift */,
 				1C018246267BC5DB00DAC401 /* Main.storyboard */,
-				1C018249267BC5E900DAC401 /* Assets.xcassets */,
-				1C01824B267BC5E900DAC401 /* LaunchScreen.storyboard */,
 				1C01824E267BC5E900DAC401 /* Info.plist */,
 			);
 			path = FireDo;
+			sourceTree = "<group>";
+		};
+		1C951710267BC8010031D88A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C018240267BC5DB00DAC401 /* AppDelegate.swift */,
+				1C018249267BC5E900DAC401 /* Assets.xcassets */,
+				1C01824B267BC5E900DAC401 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1C951712267BC82C0031D88A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1C951713267BC8380031D88A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1C951714267BC8400031D88A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CABD664FE3B1CA0F9DB9CA20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BDFB10711049B431C86EC5A /* Pods-FireDo.debug.xcconfig */,
+				772F178DD833CD5620FBDB82 /* Pods-FireDo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FB83749245B9FE41EF01506B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				111EF937F5B5546AF0798BCA /* Pods_FireDo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C018251267BC5E900DAC401 /* Build configuration list for PBXNativeTarget "FireDo" */;
 			buildPhases = (
+				33BA02263EB2BB6D5A02E872 /* [CP] Check Pods Manifest.lock */,
 				1C018239267BC5DA00DAC401 /* Sources */,
 				1C01823A267BC5DA00DAC401 /* Frameworks */,
 				1C01823B267BC5DA00DAC401 /* Resources */,
+				4D6551D6BD78A5B8439040B6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,12 +187,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C01824D267BC5E900DAC401 /* LaunchScreen.storyboard in Resources */,
+				1C8BDA7F267BC73100D8E894 /* GoogleService-Info.plist in Resources */,
 				1C01824A267BC5E900DAC401 /* Assets.xcassets in Resources */,
 				1C018248267BC5DB00DAC401 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33BA02263EB2BB6D5A02E872 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FireDo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D6551D6BD78A5B8439040B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FireDo/Pods-FireDo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FireDo/Pods-FireDo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FireDo/Pods-FireDo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1C018239267BC5DA00DAC401 /* Sources */ = {
@@ -283,6 +388,7 @@
 		};
 		1C018252267BC5E900DAC401 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BDFB10711049B431C86EC5A /* Pods-FireDo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +407,7 @@
 		};
 		1C018253267BC5E900DAC401 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 772F178DD833CD5620FBDB82 /* Pods-FireDo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
